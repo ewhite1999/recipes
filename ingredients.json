@@ -1,0 +1,102 @@
+{
+  "burritos": {
+    "recipe": "burritos",
+    "photo": "./imgs/forSite/burrito.jpg",
+    "accent_colour": "#c62b26",
+    "serving_size": "two burritos",
+    "number_of_servings": "four",
+    "ingredients": [
+      {
+        "name": "large onions",
+        "quantity": 2,
+        "prep": "diced"
+      },
+      {
+        "name": "herby tomatoes",
+        "quantity": 1,
+        "unit": "can of"
+      },
+      {
+        "name": "quorn mince",
+        "quantity": 150,
+        "unit": "g of"
+      },
+      {
+        "name": "cheddar",
+        "quantity": 240,
+        "unit": "g of",
+        "prep": "grated"
+      },
+      {
+        "name": "black beans",
+        "quantity": 1,
+        "unit": "can of",
+        "prep": "drained"
+      },
+      {
+        "name": "mediterranean herb wraps",
+        "quantity": 8
+      }
+    ],
+    "method": [
+      "fry the onions in a tablespoon of olive oil",
+      "blend the tomatoes with some cumin, salt, pepper, sugar, balsamic vinegar and garlic granules",
+      "add the Quorn to the tomato mix",
+      "once the onions have fried, add in the tomato mix and cook for ten minutes (adding water if needed)",
+      "add the black beans and cook for two minutes",
+      "place the burrito filling on a wrap and add the grated cheese",
+      "microwave to melt the cheese"
+    ],
+    "bonus_tip": "for a healthier version, you could make the same amount of filling but only use one wrap per serving. Bigger burritos, fewer carbs!"
+  },
+  "cheat's risotto": {
+    "recipe": "cheat's risotto",
+    "photo": "./imgs/forSite/risotto.jpeg",
+    "accent_colour": "#9ca526",
+    "serving_size": "one bowl",
+    "number_of_servings": "four",
+    "ingredients": [
+      {
+        "name": "large onions",
+        "quantity": 2,
+        "prep": "chopped"
+      },
+      {
+        "name": "veggie stock",
+        "quantity": 1.2,
+        "unit": "litres of"
+      },
+      {
+        "name": "chopped tomatoes",
+        "quantity": 1,
+        "unit": "can of"
+      },
+      {
+        "name": "arborio rice",
+        "quantity": 500,
+        "unit": "g of"
+      },
+      {
+        "name": "spinach",
+        "quantity": 225,
+        "unit": "g of"
+      },
+      {
+        "name": "parmesan",
+        "quantity": 50,
+        "unit": "g of",
+        "prep": "finely grated"
+      }
+    ],
+    "method": [
+      "preheat the oven to 100\u00B0C",
+      "fry the onion inside a large, oven-safe casserole dish",
+      "in a separate pan, combine the tomatoes and stock. Heat through",
+      "add the rice to the onions and then pour in the stock",
+      "stir until combined, place the lid on the casserole dish and transfer to the oven",
+      "after 40 minutes, remove from the oven to stir in the spinach then return to the oven",
+      "after five minutes, remove from the oven and add the parmesan"
+    ],
+    "bonus_tip": "this does take a while, but once you put it in the oven you can focus on something else!"
+  }
+}
