@@ -98,5 +98,66 @@
       "after five minutes, remove from the oven and add the parmesan"
     ],
     "bonus_tip": "this does take a while, but once you put it in the oven you can focus on something else!"
+  },
+  "caponata pasta": {
+    "recipe": "caponata pasta",
+    "photo": "./imgs/forSite/caponataPasta.jpeg",
+    "accent_colour": "#bf2212",
+    "serving_size": "one bowl",
+    "number_of_servings": "four",
+    "ingredients": [
+      {
+        "name": "mediterranean veg",
+        "quantity": 250,
+        "unit": "g of",
+        "prep": "chargrilled"
+      },
+      {
+        "name": "large onion",
+        "quantity": 1,
+        "prep": "diced"
+      },
+      {
+        "name": "garlic",
+        "quantity": 4,
+        "unit": "cloves of",
+        "prep": "finely sliced"
+      },
+      {
+        "name": "chopped tomatoes",
+        "quantity": 1,
+        "unit": "can of"
+      },
+      {
+        "name": "raisins",
+        "quantity": 1,
+        "unit": "handful of"
+      },
+      {
+        "name": "spaghetti",
+        "quantity": 350,
+        "unit": "g of"
+      },
+      {
+        "name": "basil leaves",
+        "quantity": 1,
+        "unit": "handful of"
+      },
+      {
+        "name": "parmesan to serve",
+        "prep": "shaved"
+      }
+    ],
+    "method": [
+      "cook the Mediterranean veg during the day, when you have time, then set aside",
+      "fry the onions in a large pan for as much time as you have",
+      "add in the garlic and cook for a further two minutes",
+      "add in the veg, tomatoes and raisins, then season with salt and pepper",
+      "simmer, uncovered, for ten minutes",
+      "meanwhile, bring some heavily salted water to a boil then cook the pasta until al dente",
+      "lightly drain the pasta then add it to the sauce",
+      "top with the basil and parmesan to serve"
+    ],
+    "bonus_tip": "you can replace the veg with anything, but peppers and aubergine work best."
   }
 }
