@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@500;600;700;800&display=swap");
+
+$white: rgba(255, 255, 255, 0.9);
+$titles: "Raleway", sans-serif;
+$body: "Merriweather", serif;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --accent_colour: #000;
+  font-family: $body;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  // min-height: 100vh;
+  max-width: 900px;
+  margin: auto;
+}
+.smaller {
+  font-size: smaller;
+}
+header {
+  position: fixed;
+  background: $white;
+  width: 100%;
+  padding: 0.25em 1em;
+  max-width: 900px;
+}
+.header_cont {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.title {
+  margin: 0.5rem;
+  z-index: 2;
+  opacity: 1;
+}
+.hamburger {
+  position: relative;
+  background: none;
+  z-index: 100;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  .closeIcon {
+    display: none;
+  }
+}
+.menu_desktop {
+  display: none;
+}
+.menu {
+  margin-top: 63px;
+  position: fixed;
+  display: none;
+  z-index: 1;
+  background-color: $white;
+  flex-direction: column;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  .nav_link {
+    padding-left: 1.5rem;
+
+    font-family: $titles;
+    text-transform: capitalize;
+    height: 63px;
+    font-size: 2rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+    }
+  }
+}
+.showMenu {
+  display: flex;
+}
+
+.cover_photo {
+  margin-top: 62.4px;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+}
+.content {
+  padding: 0 1.25em;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+}
+h1,
+h2 {
+  font-family: $titles;
+  text-transform: capitalize;
+  color: #2f1f29;
+}
+
+.accent {
+  color: var(--accent_colour);
+}
+.serving_info {
+  text-align: center;
+  font-weight: lighter;
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+ol,
+ul {
+  font-size: 0.9375rem;
+  padding: 0 2em;
+  li {
+    line-height: calc(0.9375rem + 5px);
+  }
+}
+li::first-letter {
+  text-transform: capitalize;
+}
+
+.method {
+  li {
+    margin-bottom: 0.75em;
+  }
+}
+
+.bonus {
+  padding: 0.5em 2em 0 1em;
+  font-size: 0.75rem;
+}
+.recipes_list {
+  font-size: 2rem;
+}
+@media screen and (min-width: 450px) {
+  header {
+    padding: 0.5em 2em;
+  }
+  .content {
+    padding: 0 2em;
+  }
+  .cover_photo {
+    margin-top: 71px;
+  }
+
+  .menu {
+    margin-top: 71px;
+    .nav_link {
+      height: 71px;
+      padding-left: 2.5rem;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .content {
+    padding: 0 4em;
+  }
+  .header_cont {
+    padding: 0 2em;
+  }
+  .menu {
+    .nav_link {
+      padding-left: 4.5rem;
+    }
+  }
+}
+@media screen and (min-width: 810px) {
+  .container {
+    display: flex;
+  }
+  h2 {
+    color: var(--accent_colour);
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .img_container {
+    padding-left: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content {
+    margin-top: 90px;
+  }
+  .menu_desktop {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    .nav_link {
+      font-family: $titles;
+      margin-top: 0.75em;
+      text-decoration: none;
+      color: inherit;
+      text-transform: capitalize;
+      padding: 0 1em;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      &:hover {
+        color: var(--accent_colour);
+        cursor: pointer;
+      }
+    }
+  }
+  .menu {
+    display: none;
+  }
+  .header_cont {
+    justify-content: center;
+  }
+  .cover_photo {
+    margin-top: 0;
+  }
+  .contents_img {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
