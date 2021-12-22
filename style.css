@@ -17,6 +17,7 @@ body {
 }
 
 .container {
+  min-height: 100vh;
   max-width: 900px;
   margin: auto;
 }
