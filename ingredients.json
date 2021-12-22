@@ -159,5 +159,50 @@
       "top with the basil and parmesan to serve"
     ],
     "bonus_tip": "you can replace the veg with anything, but peppers and aubergine work best."
+  },
+  "mushroom bake": {
+    "recipe": "mushroom bake",
+    "photo": "./imgs/forSite/mushroomBake.jpeg",
+    "accent_colour": "#6e3610",
+    "serving_size": "two mushrooms",
+    "number_of_servings": "two",
+    "ingredients": [
+      {
+        "name": "cherry tomatoes",
+        "quantity": 350,
+        "unit": "g of",
+        "prep": "halved"
+      },
+      {
+        "name": "large portobello mushrooms",
+        "quantity": 4,
+        "prep": "peeled"
+      },
+      {
+        "name": "garlic",
+        "quantity": 4,
+        "unit": "cloves of",
+        "prep": "finely sliced"
+      },
+      {
+        "name": "fresh sage",
+        "quantity": 15,
+        "unit": "g of",
+        "prep": "picked"
+      },
+      {
+        "name": "cheddar",
+        "quantity": 40,
+        "unit": "g of"
+      }
+    ],
+    "method": [
+      "preheat the oven to 200\u00B0C",
+      "place the tomatoes and mushrooms (stem side up) into a roasting tray then drizzle with olive oil and red wine vinegar",
+      "season with salt and pepper, then bake for ten minutes",
+      "remove the tray from the oven, crumble the cheddar into the mushroom cups and add the garlic and sage",
+      "return to the oven for a further 15 minutes"
+    ],
+    "bonus_tip": "prep the sage and garlic while the mushrooms and tomatoes are in the oven!"
   }
 }
