@@ -31,6 +31,7 @@ const createHeader = (recipeName, linksArr) => {
   navMenu.classList.add("menu");
 
   const L = linksArr.length;
+  linksArr.sort();
   for (let i = 0; i < L; i++) {
     if (linksArr[i] !== recipeName) {
       navMenu.appendChild(createNavItem(linksArr[i]));
@@ -104,6 +105,7 @@ const createBanner = (
   const navMenu = document.createElement("nav");
   navMenu.classList.add("menu_desktop");
   const L = linksArr.length;
+  linksArr.sort();
   for (let i = 0; i < L; i++) {
     if (linksArr[i] !== recipeName) {
       navMenu.appendChild(createNavItem(linksArr[i]));
