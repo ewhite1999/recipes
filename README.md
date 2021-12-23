@@ -8,6 +8,9 @@ This was created as a christmas gift for my girlfriend. It is a few vegiteraian 
 ### Mobile:
 
 ![mobile screenshot](./imgs/forSite/mobile.png)
+
+### Mobile (open nav bar):
+
 ![mobile screenshot, open nav menu](./imgs/forSite/mobileOpenMenu.png)
 
 ### Desktop:
