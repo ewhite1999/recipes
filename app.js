@@ -201,7 +201,7 @@ const clearPage = () => {
 const loadPage = async (recipeName) => {
   clearPage();
 
-  let response = await fetch("./ingredients.json");
+  let response = await fetch("./ingredients.json/");
   let data = await response.json();
 
   const linksArr = Object.keys(data);
