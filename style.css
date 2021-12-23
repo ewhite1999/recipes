@@ -3,7 +3,7 @@
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -39,8 +39,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: auto;
 }
 
@@ -75,8 +75,8 @@ header {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   left: 0;
   right: 0;
@@ -94,8 +94,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .menu .nav_link:hover {
@@ -115,7 +115,7 @@ header {
   height: auto;
   max-height: 400px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .content {
@@ -222,11 +222,11 @@ li::first-letter {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .content {
     margin-top: 90px;
@@ -237,8 +237,8 @@ li::first-letter {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-top: 2em;
   }
   .menu_desktop .nav_link {
@@ -256,22 +256,18 @@ li::first-letter {
     color: var(--accent_colour);
     cursor: pointer;
   }
-  .menu {
+  .menu,
+  .contents_img,
+  .hamburger {
     display: none;
   }
   .header_cont {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .cover_photo {
     margin-top: 0;
-  }
-  .contents_img {
-    display: none;
-  }
-  .hamburger {
-    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

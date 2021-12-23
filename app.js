@@ -1,8 +1,4 @@
-// fetch("./ingredients.json")
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => console.log(data["burritos"]["ingredients"][0]["unit"]));
+const container = document.querySelector(".container");
 
 const createNavItem = (linkName) => {
   const navItem = document.createElement("a");
@@ -11,8 +7,6 @@ const createNavItem = (linkName) => {
   navItem.addEventListener("click", () => loadPage(linkName));
   return navItem;
 };
-
-const container = document.querySelector(".container");
 
 const createHeader = (recipeName, linksArr) => {
   const header = document.createElement("header");
@@ -92,10 +86,12 @@ const createBanner = (
   const servingInfo = document.createElement("div");
   servingInfo.classList.add("serving_info");
   servingInfo.innerHTML;
+
   const infoSpan = document.createElement("span");
   servingInfo.appendChild(infoSpan);
   infoSpan.innerText = `${servingSize} per serving,`;
   servingInfo.append(document.createElement("br"));
+
   const numberOfServings = document.createElement("em");
   numberOfServings.classList.add("smaller", "accent");
   numberOfServings.innerText = `makes ${servingsNumber} servings`;
@@ -148,12 +144,15 @@ const createIngredients = (ingredients) => {
   ingredientsSection.appendChild(listIngredients);
   return ingredientsSection;
 };
+
 const createMethod = (method, bonus) => {
   const methodSection = document.createElement("section");
   methodSection.classList.add("method");
+
   const methodTitle = document.createElement("h2");
   methodTitle.innerText = "method:";
   methodSection.appendChild(methodTitle);
+
   const methodList = document.createElement("ol");
   const L = method.length;
   for (let i = 0; i < L; i++) {
@@ -177,9 +176,11 @@ const createMethod = (method, bonus) => {
 
   return methodSection;
 };
+
 const createInstructions = (ingredients, method, bonus) => {
   const mainSection = document.createElement("main");
   mainSection.classList.add("content");
+
   const instructions = document.createElement("div");
   instructions.classList.add("instructions");
   mainSection.appendChild(instructions);
@@ -187,17 +188,22 @@ const createInstructions = (ingredients, method, bonus) => {
   instructions.appendChild(createMethod(method, bonus));
   container.appendChild(mainSection);
 };
+
 const setAccentColour = (colour) => {
   const r = document.querySelector(":root");
   r.style.setProperty("--accent_colour", colour);
 };
+
 const clearPage = () => {
   container.innerHTML = "";
 };
+
 const loadPage = async (recipeName) => {
   clearPage();
+
   let response = await fetch("./ingredients.json");
   let data = await response.json();
+
   const linksArr = Object.keys(data);
   const title = data[recipeName]["recipe"];
   createHeader(title, linksArr);
@@ -219,6 +225,7 @@ const loadPage = async (recipeName) => {
   const method = data[recipeName]["method"];
   const bonus = data[recipeName]["bonus_tip"];
   createInstructions(ingredients, method, bonus);
+
   const accentColour = data[recipeName]["accent_colour"];
   setAccentColour(accentColour);
 };
