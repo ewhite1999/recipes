@@ -6,15 +6,13 @@ This was created as a christmas gift for my girlfriend. It is a few vegiteraian 
 
 ## Screenshot
 ### Mobile:
-<p align="center">
-  <img width="200" height="542.5" src="./imgs/forSite/mobile.png">
-  <img width="200" height="542.5" src="./imgs/forSite/mobileOpenMenu.png">
-</p>
+
+![mobile screenshot](./imgs/forSite/mobile.png)
+![mobile screenshot, open nav menu](./imgs/forSite/mobileOpenMenu.png)
 
 ### Desktop:
-<p align="center">
-  <img width="688" height="434.5" src="./imgs/forSite/desktopShot.png">
-</p>
+![desktop screenshot](./imgs/forSite/desktopShot.png)
+
 
 ## Possible Developments
 Add a shopping list functionality
