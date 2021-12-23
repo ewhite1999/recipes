@@ -204,5 +204,49 @@
       "return to the oven for a further 15 minutes"
     ],
     "bonus_tip": "prep the sage and garlic while the mushrooms and tomatoes are in the oven!"
+  },
+  "sausage and parsnip bake": {
+    "recipe": "sausage and parsnip bake",
+    "photo": "./imgs/forSite/sausageBake.jpg",
+    "accent_colour": "#c32231",
+    "serving_size": "two sausages",
+    "number_of_servings": "four",
+    "ingredients": [
+      {
+        "name": "large red onions",
+        "quantity": 2,
+        "prep": "petalled"
+      },
+      {
+        "name": "eating apples",
+        "quantity": 4,
+        "prep": "quartered and cored"
+      },
+      {
+        "name": "parsnips",
+        "quantity": 4,
+        "prep": "stripped"
+      },
+      {
+        "name": "veggie sausages",
+        "quantity": 8
+      },
+      {
+        "name": "honey",
+        "quantity": 1,
+        "unit": "tbsp of"
+      }
+    ],
+    "method": [
+      "preheat the oven to 180\u00B0C",
+      "place a large ovenproof frying pan on medium heat",
+      "place the onions into the pan and toss in olive oil",
+      "add in the apples and season with salt and pepper",
+      "using a peeler, peel the parsnips into long strips",
+      "deglaze the pan with red wine vinegar and place the parsnips on top",
+      "place the sausages on top and drizzle with olive oil, then bake for 30 minutes",
+      "remove from the oven and drizzle with honey and return to the oven for a further five minutes"
+    ],
+    "bonus_tip": "if you don't have an oven safe frying pan, you can just transfer onto a preheated baking sheet."
   }
 }
