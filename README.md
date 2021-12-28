@@ -2,6 +2,8 @@
 ## Overview
 This was created as a christmas gift for my girlfriend. It is a few vegiteraian recipes which are easy to make. It was designed to be viewed on mobile (specifically Chrome, Andrioid) but it does include some styling for desktop.
 
+Each page is generated using JavaScript, with the content coming from a JSON file.
+
 [Live Site](https://ewhite1999.github.io/recipes/)
 
 ## Screenshot
