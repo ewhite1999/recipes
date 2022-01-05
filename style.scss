@@ -158,29 +158,59 @@ li::first-letter {
 }
 
 #title_page {
+  --gap: 39px;
+  --num-cols: 1;
+  --child-width: 75%;
+  width: 100%;
+  margin-bottom: 2.5em;
   h1 {
     font-size: 3.375rem;
+    font-size: clamp(3.375rem, 10vw, 6.25rem);
     text-align: center;
-    padding: 0.5em 1em;
+    padding: 0.5rem 2rem;
     margin-top: 1em;
     font-family: "Arvo", serif;
   }
-  a {
-    list-style: none;
-    display: block;
-    font-size: 2rem;
-    margin-left: 2rem;
-    padding: calc(1.4375rem / 2) 0;
+  .title_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .title_text {
     font-family: "Arvo", serif;
-    text-transform: capitalize;
+    margin: 0;
+    margin-top: -1px;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 0 0 15px 15px;
+    height: 41px;
+    position: relative;
+    top: -4px;
+    border-top: 1px;
+  }
+  .title_card {
     cursor: pointer;
-    &:hover {
-      color: #e5e5e5;
-    }
+  }
+  #title_grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(var(--num-cols), var(--child-width));
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    column-gap: 20px;
   }
 }
 
 @media screen and (min-width: 450px) {
+  #title_page {
+    --child-width: 350px;
+    a {
+      margin-left: 3rem;
+      font-size: 2.5rem;
+    }
+  }
   header {
     padding: 0.5em 2em;
   }
@@ -200,6 +230,17 @@ li::first-letter {
 }
 
 @media screen and (min-width: 600px) {
+  #title_page {
+    --child-width: 40%;
+
+    h1 {
+      margin-bottom: 4rem;
+    }
+    #title_grid {
+      --num-cols: 2;
+    }
+  }
+
   .content {
     padding: 0 4em;
   }
@@ -214,6 +255,14 @@ li::first-letter {
 }
 
 @media screen and (min-width: 810px) {
+  #title_page {
+    margin: 0 auto;
+    --child-width: 325px;
+
+    h1 {
+      padding: 0;
+    }
+  }
   .container {
     display: flex;
   }
@@ -262,5 +311,18 @@ li::first-letter {
   }
   .cover_photo {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #title_page {
+    --child-width: 275px;
+
+    h1 {
+      margin-bottom: 4rem;
+    }
+    #title_grid {
+      --num-cols: 3;
+    }
   }
 }
