@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@500;600;700;800&display=swap");
 
 $white: rgba(255, 255, 255, 0.9);
 $titles: "Raleway", sans-serif;
@@ -155,6 +155,22 @@ li::first-letter {
 
 .recipes_list {
   font-size: 2rem;
+}
+
+#title_page {
+  h1 {
+    font-size: 3.375rem;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    font-family: "Arvo", serif;
+  }
+  li {
+    list-style: none;
+    font-size: 1.5625rem;
+    padding: 1rem 0.25em;
+    font-family: "Arvo", serif;
+  }
 }
 
 @media screen and (min-width: 450px) {
