@@ -209,6 +209,7 @@ li::first-letter {
   position: relative;
   top: -4px;
   border-top: 1px;
+  text-transform: capitalize;
 }
 
 #title_page .title_card {
