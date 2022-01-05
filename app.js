@@ -8,6 +8,26 @@ const createNavItem = (linkName) => {
   return navItem;
 };
 
+const createTitlePage = async () => {
+  let response = await fetch("./ingredients.json");
+  let data = await response.json();
+
+  const linksArr = Object.keys(data);
+  const titlePage = document.createElement("div");
+  titlePage.id = "title_page";
+  container.appendChild(titlePage);
+
+  const title = document.createElement("h1");
+  title.innerText = "Veggie Recipes";
+  titlePage.appendChild(title);
+
+  const L = linksArr.length;
+  linksArr.sort();
+  for (let i = 0; i < L; i++) {
+    titlePage.appendChild(createNavItem(linksArr[i]));
+  }
+};
+
 const createHeader = (recipeName, linksArr) => {
   const header = document.createElement("header");
   container.appendChild(header);
@@ -205,6 +225,7 @@ const loadPage = async (recipeName) => {
   let data = await response.json();
 
   const linksArr = Object.keys(data);
+  console.log(linksArr);
   const title = data[recipeName]["recipe"];
   createHeader(title, linksArr);
 
@@ -230,4 +251,4 @@ const loadPage = async (recipeName) => {
   setAccentColour(accentColour);
 };
 
-loadPage("burritos");
+createTitlePage();

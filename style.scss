@@ -165,11 +165,18 @@ li::first-letter {
     margin-top: 1em;
     font-family: "Arvo", serif;
   }
-  li {
+  a {
     list-style: none;
-    font-size: 1.5625rem;
-    padding: 1rem 0.25em;
+    display: block;
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding: calc(1.4375rem / 2) 0;
     font-family: "Arvo", serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    &:hover {
+      color: #e5e5e5;
+    }
   }
 }
 
